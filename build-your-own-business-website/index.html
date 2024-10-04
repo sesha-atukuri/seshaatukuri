@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #1c1b29;
+}
+div {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 75px;
+  color: #d4af37;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #f5deb3;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,0,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("./green_set.jpg");
+}
+.second{
+  background-image: url("./multicolor.jpg");
+}
+.third{
+  background-image: url("./pink.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>sesha Jewelry</h1>
+<h2>a Indian Jewelry</h2>
+<div class="first show-description">
+  <p>Gemstone set<span class="price">$140</span><br />
+  <small>Wherever your path originates, let it lead you toward the highest Divine Truth.</small></p>
+</div>
+
+<div class="second show-description">
+  <p>Multicolor beads set <span class="price">$122</span><br />
+  <small>Peaceful spirit, may you walk through the world with compassion and protection.</small></p>
+</div>
+  
+<div class="third show-description">
+  <p>Semi precious<span class="price">$80</span><br />
+  <small>As our spirits evolve, our inner light grows more luminous, shining its beauty out into the world.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>

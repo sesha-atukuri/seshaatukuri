@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('./background.jpg');
+      background-size: cover;
+      color: white;
+    }
+    body {
+      background: linear-gradient(to right, #a1c4fd, #fbc2eb);
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src=".\Sesha_img.JPG" alt="Sample Image" style="width: 200px; height: 200px;">
+    <h1>Sesha's Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Top Algorithms</a></li>
+      <li><a href="#">Popular Languages</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Welcome to My Digital Sanctuary!</h2>
+    <h3>A Journey Through Code, Creativity & Life</h3>
+    <p>Hi! I’m Sesha, a Software Engineer Enthusiast.<br>“Life is all about solving problems—whether it’s fixing bugs or finding meaning!”</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h3>Coding Tip of the Week:</h3>
+    <p>"If a bug doesn't seem to make sense, you're probably looking at the wrong part of the code."</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h3>Fun Facts About Me!</h3>
+    <p>I’ve been a QA engineer for over 8 years.<br>I live in sunny San Diego! ☀️<br>I’m a big fan of spicy food and action movies.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>

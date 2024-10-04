@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesha Atukuri</title>
+  <style>
+    body {
+      text-align: center;
+      background: url("./background.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: helvetica;
+    }
+    p {
+      font-size: 22px;
+    }
+    input, textarea {
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-size: 18px;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 10px;
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    input[type="submit"] {
+      background: red;
+      color: white;
+      border: 0;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+  </style>
+</head>
+<body>
+  <img src="./sesha_img.jpg" alt="Sample Image" style="width: 200px; height: 200px;">
+  <p>Hi! I'm Sesha Atukuri, Aspiring Software Engineer | 8+ Years in QA & Automation | Eager to Deepen Coding Expertise and Drive Innovation</p>
+  <div class="contact-form">
+    <h2>Contact Me</h2>
+    <form action="/submit_form" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <input type="text" name="subject" placeholder="Subject" required><br>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+</body>
+</html>
